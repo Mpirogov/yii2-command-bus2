@@ -8,7 +8,7 @@ php:
   - hhvm
 
 before_install:
-  - composer config -g github-oauth.github.com $GITHUB_TOKEN
+  - composer config -g github-oauth.github.com ffba67bb43d903b44dc1a43a19ab756d3b4ce397
 
 install:
   - travis_retry composer self-update && composer --version
