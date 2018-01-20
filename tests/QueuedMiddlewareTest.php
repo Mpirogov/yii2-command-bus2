@@ -13,7 +13,6 @@ class QueuedMiddlewareTest extends TestCase
     public function testQueuedCommand()
     {
         $id = $this->commandBus->handle(new QueuedTestCommand());
-		var_dump($id);
         $this->assertInternalType('integer', $id);
 
         /** @var \yii\queue\file\Queue $queue */
