@@ -10,8 +10,8 @@
   "type": "yii2-extension",
   "license": "BSD-3-Clause",
   "support": {
-    "issues": "https://github.com/Mpirogov/yii2-command-bus2/issues",
-    "source": "https://github.com/Mpirogov/yii2-command-bus2"
+    "issues": "https://github.com/mpirogov/yii2-command-bus2/issues",
+    "source": "https://github.com/mpirogov/yii2-command-bus2"
   },
   "minimum-stability": "stable",
   "authors": [
