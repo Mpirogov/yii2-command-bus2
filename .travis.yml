@@ -1,6 +1,6 @@
 sudo: required
 language: php
-group: edge
+group: deprecated-2017Q4
 dist: trusty
 php:
   - 5.6
