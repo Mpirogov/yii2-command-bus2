@@ -3,14 +3,14 @@
 namespace mpirogov\bus\tests\data;
 
 use mpirogov\bus\interfaces\Middleware;
-use yii\base\Object;
+use yii\base\BaseObject;
 
 /**
  * Class TestMiddleware
  * @package mpirogov\bus\tests\data
  * @author Eugene Terentev <eugene@terentev.net>
  */
-class TestMiddleware extends Object implements Middleware
+class TestMiddleware extends BaseObject implements Middleware
 {
 
     public function execute($command, callable $next)

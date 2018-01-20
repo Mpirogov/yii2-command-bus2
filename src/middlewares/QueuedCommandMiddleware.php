@@ -4,7 +4,7 @@ namespace mpirogov\bus\middlewares;
 
 use mpirogov\bus\interfaces\Middleware;
 use mpirogov\bus\interfaces\QueuedCommand;
-use yii\base\Object;
+use yii\base\BaseObject;
 use yii\di\Instance;
 use yii\queue\Queue;
 
@@ -13,7 +13,7 @@ use yii\queue\Queue;
  *
  * @author Eugene Terentev <eugene@terentev.net>
  */
-class QueuedCommandMiddleware extends Object implements Middleware
+class QueuedCommandMiddleware extends BaseObject implements Middleware
 {
     /**
      * @var mixed|Queue

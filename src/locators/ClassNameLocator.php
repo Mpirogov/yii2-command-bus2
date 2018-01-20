@@ -4,7 +4,7 @@ namespace mpirogov\bus\locators;
 
 use mpirogov\bus\interfaces\Handler;
 use mpirogov\bus\interfaces\HandlerLocator;
-use yii\base\Object;
+use yii\base\BaseObject;
 use yii\di\Instance;
 
 /**
@@ -12,7 +12,7 @@ use yii\di\Instance;
  *
  * @author Eugene Terentev <eugene@terentev.net>
  */
-class ClassNameLocator extends Object implements HandlerLocator
+class ClassNameLocator extends BaseObject implements HandlerLocator
 {
     /**
      * @var

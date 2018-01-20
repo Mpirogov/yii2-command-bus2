@@ -3,7 +3,7 @@
 namespace mpirogov\bus\tests\data;
 use mpirogov\bus\interfaces\Command;
 use mpirogov\bus\interfaces\Handler;
-use yii\base\Object;
+use yii\base\BaseObject;
 
 
 /**
@@ -11,7 +11,7 @@ use yii\base\Object;
  * @package mpirogov\bus\tests\data
  * @author Eugene Terentev <eugene@terentev.net>
  */
-class TestHandler extends Object implements Handler
+class TestHandler extends BaseObject implements Handler
 {
     /**
      * @param $command

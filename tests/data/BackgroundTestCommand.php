@@ -6,14 +6,14 @@ use mpirogov\bus\Command;
 use mpirogov\bus\interfaces\BackgroundCommand;
 use mpirogov\bus\interfaces\SelfHandlingCommand;
 use mpirogov\bus\middlewares\BackgroundCommandTrait;
-use yii\base\Object;
+use yii\base\BaseObject;
 
 /**
  * Class BackgroundTestCommand
  * @package mpirogov\bus\tests\data
  * @author Eugene Terentev <eugene@terentev.net>
  */
-class BackgroundTestCommand extends Object implements BackgroundCommand, SelfHandlingCommand
+class BackgroundTestCommand extends BaseObject implements BackgroundCommand, SelfHandlingCommand
 {
     use BackgroundCommandTrait;
 

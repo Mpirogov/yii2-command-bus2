@@ -3,7 +3,7 @@
 namespace mpirogov\bus\middlewares;
 
 use mpirogov\bus\CommandBus;
-use yii\base\Object;
+use yii\base\BaseObject;
 use yii\di\Instance;
 use yii\queue\Job;
 use yii\queue\Queue;
@@ -11,7 +11,7 @@ use yii\queue\Queue;
 /**
  *
  */
-class QueuedJobWrapper extends Object implements Job
+class QueuedJobWrapper extends BaseObject implements Job
 {
     /**
      * @var mixed
