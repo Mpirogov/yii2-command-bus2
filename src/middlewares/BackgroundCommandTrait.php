@@ -1,6 +1,6 @@
 <?php
 
-namespace Mpirogov\bus\middlewares;
+namespace mpirogov\bus\middlewares;
 
 /**
  * Class BackgroundCommandTrait

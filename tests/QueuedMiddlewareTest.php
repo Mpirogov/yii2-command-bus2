@@ -3,9 +3,9 @@
  * @author Eugene Terentev <eugene@terentev.net>
  */
 
-namespace Mpirogov\bus\tests;
+namespace mpirogov\bus\tests;
 
-use Mpirogov\bus\tests\data\QueuedTestCommand;
+use mpirogov\bus\tests\data\QueuedTestCommand;
 use yii\helpers\FileHelper;
 
 class QueuedMiddlewareTest extends TestCase

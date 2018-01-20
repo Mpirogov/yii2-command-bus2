@@ -1,8 +1,8 @@
 <?php
 
-namespace Mpirogov\bus\middlewares;
+namespace mpirogov\bus\middlewares;
 
-use Mpirogov\bus\CommandBus;
+use mpirogov\bus\CommandBus;
 use yii\base\Object;
 use yii\di\Instance;
 use yii\queue\Job;

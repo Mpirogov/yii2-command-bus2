@@ -1,14 +1,14 @@
 <?php
 
-namespace Mpirogov\bus\tests\data;
-use Mpirogov\bus\interfaces\Command;
-use Mpirogov\bus\interfaces\Handler;
+namespace mpirogov\bus\tests\data;
+use mpirogov\bus\interfaces\Command;
+use mpirogov\bus\interfaces\Handler;
 use yii\base\Object;
 
 
 /**
  * Class TestHandler
- * @package Mpirogov\bus\tests\data
+ * @package mpirogov\bus\tests\data
  * @author Eugene Terentev <eugene@terentev.net>
  */
 class TestHandler extends Object implements Handler

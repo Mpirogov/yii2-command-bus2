@@ -1,11 +1,11 @@
 <?php
 
-namespace Mpirogov\bus\middlewares;
+namespace mpirogov\bus\middlewares;
 
 
 /**
  * Class QueuedCommandTrait
- * @package Mpirogov\bus\middlewares
+ * @package mpirogov\bus\middlewares
  * @author Eugene Terentev <eugene@terentev.net>
  */
 trait QueuedCommandTrait

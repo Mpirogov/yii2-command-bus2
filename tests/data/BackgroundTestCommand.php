@@ -1,16 +1,16 @@
 <?php
 
-namespace Mpirogov\bus\tests\data;
+namespace mpirogov\bus\tests\data;
 
-use Mpirogov\bus\Command;
-use Mpirogov\bus\interfaces\BackgroundCommand;
-use Mpirogov\bus\interfaces\SelfHandlingCommand;
-use Mpirogov\bus\middlewares\BackgroundCommandTrait;
+use mpirogov\bus\Command;
+use mpirogov\bus\interfaces\BackgroundCommand;
+use mpirogov\bus\interfaces\SelfHandlingCommand;
+use mpirogov\bus\middlewares\BackgroundCommandTrait;
 use yii\base\Object;
 
 /**
  * Class BackgroundTestCommand
- * @package Mpirogov\bus\tests\data
+ * @package mpirogov\bus\tests\data
  * @author Eugene Terentev <eugene@terentev.net>
  */
 class BackgroundTestCommand extends Object implements BackgroundCommand, SelfHandlingCommand

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mpirogov\bus\exceptions;
+namespace mpirogov\bus\exceptions;
 
 /**
  * Class MissingHandlerException

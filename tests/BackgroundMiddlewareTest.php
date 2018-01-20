@@ -3,11 +3,11 @@
  * @author Eugene Terentev <eugene@terentev.net>
  */
 
-namespace Mpirogov\bus\tests;
+namespace mpirogov\bus\tests;
 
 use Symfony\Component\Process\Exception\ProcessTimedOutException;
 use Symfony\Component\Process\Process;
-use Mpirogov\bus\tests\data\BackgroundTestCommand;
+use mpirogov\bus\tests\data\BackgroundTestCommand;
 
 class BackgroundMiddlewareTest extends TestCase
 {

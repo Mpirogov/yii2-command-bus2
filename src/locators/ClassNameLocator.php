@@ -1,9 +1,9 @@
 <?php
 
-namespace Mpirogov\bus\locators;
+namespace mpirogov\bus\locators;
 
-use Mpirogov\bus\interfaces\Handler;
-use Mpirogov\bus\interfaces\HandlerLocator;
+use mpirogov\bus\interfaces\Handler;
+use mpirogov\bus\interfaces\HandlerLocator;
 use yii\base\Object;
 use yii\di\Instance;
 

@@ -1,5 +1,5 @@
 {
-  "name": "Mpirogov/yii2-command-bus2",
+  "name": "mpirogov/yii2-command-bus2",
   "description": "Yii2 Command Bus extension",
   "keywords": [
     "yii2",
@@ -36,7 +36,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Mpirogov\\bus\\": "src/"
+      "mpirogov\\bus\\": "src/"
     }
   }
 }

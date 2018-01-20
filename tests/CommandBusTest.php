@@ -3,12 +3,12 @@
  * @author Eugene Terentev <eugene@terentev.net>
  */
 
-namespace Mpirogov\bus\tests;
+namespace mpirogov\bus\tests;
 
-use Mpirogov\bus\tests\data\TestCommand;
-use Mpirogov\bus\tests\data\TestHandler;
-use Mpirogov\bus\tests\data\TestHandlerCommand;
-use Mpirogov\bus\tests\data\TestMiddleware;
+use mpirogov\bus\tests\data\TestCommand;
+use mpirogov\bus\tests\data\TestHandler;
+use mpirogov\bus\tests\data\TestHandlerCommand;
+use mpirogov\bus\tests\data\TestMiddleware;
 
 class CommandBusTest extends TestCase
 {

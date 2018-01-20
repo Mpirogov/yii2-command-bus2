@@ -1,9 +1,9 @@
 <?php
 
-namespace Mpirogov\bus\middlewares;
+namespace mpirogov\bus\middlewares;
 
-use Mpirogov\bus\interfaces\Middleware;
-use Mpirogov\bus\interfaces\QueuedCommand;
+use mpirogov\bus\interfaces\Middleware;
+use mpirogov\bus\interfaces\QueuedCommand;
 use yii\base\Object;
 use yii\di\Instance;
 use yii\queue\Queue;

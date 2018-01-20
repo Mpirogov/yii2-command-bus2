@@ -1,15 +1,15 @@
 <?php
 
-namespace Mpirogov\bus\middlewares;
+namespace mpirogov\bus\middlewares;
 
 use Yii;
 use yii\base\Object;
 use yii\log\Logger;
-use Mpirogov\bus\interfaces\Middleware;
+use mpirogov\bus\interfaces\Middleware;
 
 /**
  * Class LoggingMiddleware
- * @package Mpirogov\bus\middlewares
+ * @package mpirogov\bus\middlewares
  * @author Eugene Terentev <eugene@terentev.net>
  */
 class LoggingMiddleware extends Object implements Middleware

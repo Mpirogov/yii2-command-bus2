@@ -1,13 +1,13 @@
 <?php
 
-namespace Mpirogov\bus\tests;
+namespace mpirogov\bus\tests;
 
-use Mpirogov\bus\CommandBus;
+use mpirogov\bus\CommandBus;
 use yii\helpers\ArrayHelper;
 
 /**
  * Class TestCase
- * @package Mpirogov\bus\tests
+ * @package mpirogov\bus\tests
  * @author Eugene Terentev <eugene@terentev.net>
  */
 abstract class TestCase extends \PHPUnit_Framework_TestCase

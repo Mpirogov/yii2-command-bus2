@@ -1,13 +1,13 @@
 <?php
 
-namespace Mpirogov\bus\tests\data;
+namespace mpirogov\bus\tests\data;
 
-use Mpirogov\bus\interfaces\Middleware;
+use mpirogov\bus\interfaces\Middleware;
 use yii\base\Object;
 
 /**
  * Class TestMiddleware
- * @package Mpirogov\bus\tests\data
+ * @package mpirogov\bus\tests\data
  * @author Eugene Terentev <eugene@terentev.net>
  */
 class TestMiddleware extends Object implements Middleware

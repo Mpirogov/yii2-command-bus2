@@ -1,16 +1,16 @@
 <?php
 
-namespace Mpirogov\bus\middlewares;
+namespace mpirogov\bus\middlewares;
 
 use Symfony\Component\Process\Process;
-use Mpirogov\bus\interfaces\BackgroundCommand;
-use Mpirogov\bus\interfaces\Middleware;
+use mpirogov\bus\interfaces\BackgroundCommand;
+use mpirogov\bus\interfaces\Middleware;
 use Yii;
 use yii\base\BaseObject;
 
 /**
  * Class BackgroundCommandMiddleware
- * @package Mpirogov\bus\middlewares
+ * @package mpirogov\bus\middlewares
  * @author Eugene Terentev <eugene@terentev.net>
  */
 class BackgroundCommandMiddleware extends BaseObject implements Middleware

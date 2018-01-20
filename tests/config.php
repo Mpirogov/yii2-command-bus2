@@ -9,16 +9,16 @@ return [
     'vendorPath' => dirname(__DIR__) . '/vendor',
 
     'controllerMap' => [
-        'background-bus' => 'Mpirogov\bus\console\BackgroundBusController',
-        'queue-bus' => 'Mpirogov\bus\console\QueueBusController',
+        'background-bus' => 'mpirogov\bus\console\BackgroundBusController',
+        'queue-bus' => 'mpirogov\bus\console\QueueBusController',
     ],
     'components' => [
         'commandBus' => [
-            'class' => 'Mpirogov\bus\CommandBus',
-            'locator' => 'Mpirogov\bus\locators\ClassNameLocator',
+            'class' => 'mpirogov\bus\CommandBus',
+            'locator' => 'mpirogov\bus\locators\ClassNameLocator',
             'middlewares' => [
                 [
-                    'class' => '\Mpirogov\bus\middlewares\BackgroundCommandMiddleware',
+                    'class' => '\mpirogov\bus\middlewares\BackgroundCommandMiddleware',
                     'backgroundHandlerPath' => __DIR__ . '/yii.php',
                     'backgroundHandlerRoute' => 'background-bus/handle',
                     'backgroundHandlerArguments' => ['--interactive=0'],
@@ -26,10 +26,10 @@ return [
                     'backgroundProcessTimeout' => 5
                 ],
                 [
-                    'class' => '\Mpirogov\bus\middlewares\QueuedCommandMiddleware'
+                    'class' => '\mpirogov\bus\middlewares\QueuedCommandMiddleware'
                 ],
                 [
-                    'class' => '\Mpirogov\bus\middlewares\LoggingMiddleware',
+                    'class' => '\mpirogov\bus\middlewares\LoggingMiddleware',
                     'level' => 1,
                 ],
             ],

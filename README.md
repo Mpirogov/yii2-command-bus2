@@ -2,7 +2,7 @@
 
 Command Bus for Yii2
 
-[![Build Status](https://travis-ci.org/Mpirogov/yii2-command-bus2.svg?branch=master)](https://travis-ci.org/Mpirogov/yii2-command-bus2)
+[![Build Status](https://travis-ci.org/mpirogov/yii2-command-bus2.svg?branch=master)](https://travis-ci.org/mpirogov/yii2-command-bus2)
 
 
 ## What is Command Bus? 
@@ -19,12 +19,12 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist Mpirogov/yii2-command-bus2
+php composer.phar require --prefer-dist mpirogov/yii2-command-bus2
 ```
 
 or add
 ```
-"Mpirogov/yii2-command-bus2": "^1.0"
+"mpirogov/yii2-command-bus2": "^1.0"
 ```
 to your composer.json file
 
@@ -38,7 +38,7 @@ return [
     // ...
     'components' => [
         'commandBus' => [
-            'class' => 'Mpirogov\bus\CommandBus'
+            'class' => 'mpirogov\bus\CommandBus'
         ]
     ],
 ];
@@ -55,7 +55,7 @@ For the background commands worker, add a controller and command bus middleware 
 ```php
 'controllerMap' => [
     'background-bus' => [
-        'class' => 'Mpirogov\bus\console\BackgroundBusController',
+        'class' => 'mpirogov\bus\console\BackgroundBusController',
     ]
 ],
 
@@ -64,7 +64,7 @@ For the background commands worker, add a controller and command bus middleware 
             ...
             'middlewares' => [
                 [
-                    'class' => '\Mpirogov\bus\middlewares\BackgroundCommandMiddleware',
+                    'class' => '\mpirogov\bus\middlewares\BackgroundCommandMiddleware',
                     'backgroundHandlerPath' => '@console/yii',
                     'backgroundHandlerRoute' => 'background-bus/handle',
                 ]                
@@ -114,7 +114,7 @@ If you need commands to be run in queue, you need to setup middleware and yii2-q
         ...
         'middlewares' => [
             [
-                'class' => '\Mpirogov\bus\middlewares\QueuedCommandMiddleware',
+                'class' => '\mpirogov\bus\middlewares\QueuedCommandMiddleware',
                 // 'delay' => 3, // You can set default delay for all commands here
             ]                
         ]
@@ -150,9 +150,9 @@ return [
     // ...
     'components' => [
         'commandBus' => [
-            'class' => 'Mpirogov\bus\CommandBus',
+            'class' => 'mpirogov\bus\CommandBus',
             'locator' => [
-                'class' => 'Mpirogov\bus\locators\ClassNameLocator',
+                'class' => 'mpirogov\bus\locators\ClassNameLocator',
                 'handlers' => [
                     'app\commands\SomeCommand' => 'app\handlers\SomeHandler'
                 ]

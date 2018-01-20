@@ -1,15 +1,15 @@
 <?php
 
-namespace Mpirogov\bus\console;
+namespace mpirogov\bus\console;
 
-use Mpirogov\bus\CommandBus;
+use mpirogov\bus\CommandBus;
 use yii\console\Controller;
 use yii\di\Instance;
 use yii\helpers\Console;
 
 /**
  * Class BackgroundBusController
- * @package Mpirogov\bus\console
+ * @package mpirogov\bus\console
  * @author Eugene Terentev <eugene@terentev.net>
  */
 class BackgroundBusController extends Controller

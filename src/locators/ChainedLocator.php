@@ -1,14 +1,14 @@
 <?php
 
-namespace Mpirogov\bus\locators;
+namespace mpirogov\bus\locators;
 
-use Mpirogov\bus\interfaces\HandlerLocator;
+use mpirogov\bus\interfaces\HandlerLocator;
 use yii\base\Object;
 use yii\di\Instance;
 
 /**
  * Class ChainedLocator
- * @package Mpirogov\bus\base
+ * @package mpirogov\bus\base
  * @author Eugene Terentev <eugene@terentev.net>
  */
 class ChainedLocator extends Object implements HandlerLocator

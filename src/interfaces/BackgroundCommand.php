@@ -1,6 +1,6 @@
 <?php
 
-namespace Mpirogov\bus\interfaces;
+namespace mpirogov\bus\interfaces;
 
 /**
  * Interface BackgroundCommand

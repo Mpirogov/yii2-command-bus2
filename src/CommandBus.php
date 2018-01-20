@@ -1,19 +1,19 @@
 <?php
 
-namespace Mpirogov\bus;
+namespace mpirogov\bus;
 
-use Mpirogov\bus\interfaces\CommandBusInterface;
-use Mpirogov\bus\interfaces\HandlerLocator;
-use Mpirogov\bus\interfaces\Middleware;
-use Mpirogov\bus\interfaces\SelfHandlingCommand;
+use mpirogov\bus\interfaces\CommandBusInterface;
+use mpirogov\bus\interfaces\HandlerLocator;
+use mpirogov\bus\interfaces\Middleware;
+use mpirogov\bus\interfaces\SelfHandlingCommand;
 use yii\base\Component;
 use yii\base\InvalidConfigException;
 use yii\di\Instance;
-use Mpirogov\bus\exceptions\MissingHandlerException;
+use mpirogov\bus\exceptions\MissingHandlerException;
 
 /**
  * Class CommandBus
- * @package Mpirogov\bus
+ * @package mpirogov\bus
  */
 class CommandBus extends Component implements CommandBusInterface
 {
